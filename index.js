@@ -27,18 +27,6 @@ function spawnSync(command, args, options) {
     var parsed;
     var result;
 
-    if (!cpSpawnSync) {
-        try {
-            cpSpawnSync = require('spawn-sync');  // eslint-disable-line global-require
-        } catch (ex) {
-            throw new Error(
-                'In order to use spawnSync on node 0.10 or older, you must ' +
-                'install spawn-sync:\n\n' +
-                '  npm install spawn-sync --save'
-            );
-        }
-    }
-
     // Parse the arguments
     parsed = parse(command, args, options);
 

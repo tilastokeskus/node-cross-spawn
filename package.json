@@ -1,5 +1,5 @@
 {
-  "name": "cross-spawn",
+  "name": "@tilastokeskus/cross-spawn",
   "version": "5.0.1",
   "description": "Cross platform child_process#spawn and child_process#spawnSync",
   "main": "index.js",
